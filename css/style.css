@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 
 ul{
     list-style: none;
@@ -21,24 +24,28 @@ header {
     
 }
 main{
-    position: fixed;
+    /* position: fixed;
     right: 0;
-    top: 90px;
-    width: 80%;
+    top: 90px; */
+    width: 100%;
     background-color: #12151c;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 160px);
     overflow-y: auto;
+
+}
+.main{
+    width: 100%;
 
 }
 
 footer {
     width: 100%;
-    height: 90px;
+    height: 70px;
     background-color: #212121;
 }
 .container{
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
 }
 
 .content {
@@ -48,18 +55,19 @@ footer {
 .slidebar {
     width: 20%;
     border: 1px solid black;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 70px);
     background-color: black;
     flex-shrink: 0;
     color: white;
     overflow-y: auto;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 .logo{
-    width: 150px;
-    margin: 20px ;
+    width: 140px;
+    margin-top: 10px;
 }
 .menu-list{
+    padding-top: 20px;
     padding-bottom: 30px;
 }
 .home{
@@ -68,23 +76,102 @@ footer {
     gap: 5px;
     color: gray;
 }
+/* IMAGE */
 .home img{
-    width: 30px;
+    width: 20px;
     
 }
+.img-dowload{
+    width: 10px;
+}
+.profile-img{
+    width: 20px;
+    background-color: gray;
+    border-radius: 50%;
+}
+/* BUTTON */
 .button-plus{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border: none;
-    padding: 8px;
+    padding: 5px;
     background-color: grey;
     color: #060910;
-    margin-right: 10px;
+    margin-right: 5px;
+}
+.header-button{
+    display: inline-block;
+    border: 2px solid white;
+    padding: 8px 40px;
+    border-radius: 30px;
+}
+.installa-app{
+    color: gray;
+    font-size: 0.8rem;
+    margin-left: 5px;
+
+}
+/* SELETTORI */
+.header-button a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.7rem;
 }
 
 .playlist h3{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .playlist li{
     padding-bottom: 20px;
     color: gray;
+}
+.list-menu a{
+    color: gray;
+    text-transform: uppercase;
+}
+.content-img{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.col{
+    width: calc(100% / 6);
+    border: 1px solid white;
+    min-height: 30px;
+    
+}
+
+/* UTILITIES */
+.f-direction-column{
+    flex-direction: column;
+}
+.jc-content-between{
+    justify-content: space-between;
+
+}
+.jc-content-end{
+    justify-content: flex-end;
+
+}
+.jc-content-center{
+    justify-content: center;
+}
+.margin-bottom{
+    border-bottom: 2px solid gray;
+}
+.aitems-center{
+    align-items: center;
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-30{
+    gap: 30px;
+}
+.padding-top-10{
+    padding-top: 10px;
+
+}
+.padding-top-20{
+    padding-top: 20px;
 }
