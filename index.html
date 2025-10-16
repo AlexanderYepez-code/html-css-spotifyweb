@@ -20,8 +20,15 @@
         <aside class="slidebar content f-direction-column jc-content-between ">
             <section class="container  ">
 
-                <div class="logo">
-                    <img src="./img/logo.svg" alt="">
+                <div >
+                    <picture>
+                        <source media="(max-width: 500px)" class="logo" srcset="./img/logo-small.svg"  alt="">
+                        <img class="logo" src="./img/logo.svg" alt="">
+
+                    </picture>
+
+                </div>
+                <div class="Logo2">
                 </div>
                 <div class="content f-direction-column ">
                     <div class="menu-list-top">
@@ -29,15 +36,15 @@
                             <ul>
                                 <li class="home">
                                     <img src="./img/home.svg" alt="">
-                                    Home
+                                    <a href="">Home</a>
                                 </li>
                                 <li class="home">
                                     <img src="./img/search.svg" alt="">
-                                    Cerca
+                                    <a href="">Cerca</a>
                                 </li>
                                 <li class="home">
                                     <img src="./img/libreria.svg" alt="">
-                                    La tua Libreria
+                                    <a href="">La tua libreria</a>
                                 </li>
                             </ul>
 
@@ -71,7 +78,7 @@
                     <img class="img-dowload" src="./img/download.svg" alt="">
                     <div class="installa-app">Installa app</div>
                 </div>
-                <div class="content aitems-center padding-top-10 gap-10">
+                <div class="content aitems-center padding-top-10 gap-10 padding-bottom-10">
                     <img class=" profile-img" src="./img/profile.svg" alt="">
                     <h4> John Doe</h4>
                 </div>
@@ -88,7 +95,7 @@
             </header>
             <main>
                 <nav>
-                    <ul class=" list-menu content wrap gap-30 jc-content-center padding-top-20">
+                    <ul class=" list-menu content wrap gap-20 jc-content-center padding-top-20">
                         <li>
                             <a href="">In evidenza</a>
                         </li>
@@ -153,12 +160,12 @@
                         <div class="col">
                             <img src="./img/radar.jpeg" alt="">
                             <h3>Release Radar</h3>
-                           
+
                         </div>
                         <div class="col">
                             <img src="./img/mixdaily.jpeg" alt="">
                             <h3>Daily Mix</h3>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -182,7 +189,59 @@
     </div>
     <!-- Fine sezione del main con il sontenuto  -->
     <!-- Inizio footer -->
-    <footer>
+    <footer class=" content">
+        <div class="content container-95 ">
+            <div class="sinister content aitems-center jc-content-between gap-10">
+                <div class="content aitems-center gap-10">
+                    <img class="footer-ima" src="./img/sinister.jpeg" alt="">
+                    <div>
+                        <h6 class="white">Sinister</h6>
+                        <p class="grey font-size-0-6"><strong>Brano nome</strong></p>
+                    </div>
+                </div>
+                <div class="content grey gap-10 wrap">
+                    <i class="fa-regular fa-folder"></i>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+
+            </div>
+            <div class="player">
+                <div class="f-direction-column container">
+                    <div class="player-menu">
+                        <div class="content jc-content-center white gap-30 padding-top-10 aitems-center">
+                            <i class="fa-solid fa-shuffle"></i>
+                            <i class="fa-solid fa-backward-step"></i>
+                            <i class="fa-regular fa-circle-play font-size-1-2"></i>
+                            <i class="fa-solid fa-forward-step"></i>
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </div>
+                    </div>
+                    <div class="content jc-content-center aitems-center gap-10 padding-top-10 ">
+                        <span class="white font-size-0-6">0:25</span>
+                        <div class="playerbar"></div>
+                        <span class="white font-size-0-6">4:35</span>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="volume content container-95 aitems-center jc-content-between gap-20">
+                <div class="content">
+                    <div class="content white gap-5  ">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <i class="fa-solid fa-display"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+
+
+                    </div>
+
+                </div>
+                <div class="playerbar2"></div>
+
+            </div>
+        </div>
+
 
     </footer>
     <!-- Fine footer -->
